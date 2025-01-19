@@ -3,6 +3,10 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# avoiding unnecessary macOS metadata from being tracked
+.DS_Store
+imgs/.DS_Store
+
 # C extensions
 *.so
 

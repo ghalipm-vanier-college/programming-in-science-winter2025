@@ -1,6 +1,0 @@
-bin/
-.DS_Store
-build/
-.gradle/
-__pycache__/
-.pytest_cache/

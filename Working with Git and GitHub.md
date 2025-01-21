@@ -1,8 +1,8 @@
 # Working with Git and GitHub
 
-Here are what steps you need to take to work with Git, GitHub, and GitHub Classroom on your computer using any one of the code editors such as Pycharm/VSCode/IntelliJ (not using an online tool):
+Here are what steps you need to take to work with Git, GitHub, and GitHub Classroom on your computer using any one of the code editors such as Pycharm/VSCode/IntelliJ (not using an online tool):  
 
-Create a folder on your desktop, rename it to "Labs" and open up the command prompt (terminal).
+Create a folder on your desktop, rename it to "Labs" and open up the command prompt (terminal).  
 On the terminal, type in "cd " and drag and drop the folder you just created to the terminal window and hit enter.
 Then, type in "git clone " and add your URL to the repository.
 Now type in "cd " again and drag and drop the folder you just cloned to the terminal window. Leave this window open.

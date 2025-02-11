@@ -228,7 +228,7 @@ for number in numbers:
 
 Example of testing a **While loop** with boundary conditions:
 ```python
-count = 0
+count = 0 # count can only be positive integers such as 1,2,3,4; so count=0  and count=5 is already edge case for count in this example.    
 while count < 5:
     print(count)
     count += 1

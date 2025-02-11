@@ -64,7 +64,7 @@ This will print:
 
 ### 3. **The While Loop**
 
-The **While loop** is used when you want to repeat a block of code as long as a certain condition is **true**. It is useful when you do not know in advance how many times the loop should run. While loop is not self contained and depends on external factors. For loop is enitrely self contained. 
+The **While loop** is used when you want to repeat a block of code as long as a certain condition is **true**. It is useful when you do not know in advance how many times the loop should run. While loop is not self contained and depends on external factors. For loop is entirely self contained. 
 
 #### Syntax:
 ```python
@@ -79,7 +79,7 @@ The loop continues to run until the **condition** becomes **false**. While loop 
 Example:
 ```python
 # Print numbers from 1 to 5 using a while loop
-count = 1 # important to initialize
+count = 1 # important to initialize - not initializing leads to non execution of while block!
 while count <= 5:
     print(count)
     count += 1  # Increment the counter to avoid infinite loop

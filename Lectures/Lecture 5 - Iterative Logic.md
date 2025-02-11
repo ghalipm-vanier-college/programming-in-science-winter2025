@@ -136,6 +136,7 @@ for i in range(10):
     print(i)
 ```
 
+
 This will print:
 ```
 0
@@ -145,6 +146,18 @@ This will print:
 4
 ```
 The loop stops when `i` reaches 5, and the remaining numbers are not printed.
+
+```python
+for fruit in ['apple', 'orange', 'cherry', 'berry']:
+    if fruit == 'cherry':
+        break  # Exit the loop when 'cherry' is found
+    print(fruit)
+```
+This will print: 
+```
+apple
+orange
+```
 
 #### The **Continue** Statement
 
@@ -172,6 +185,20 @@ This will print:
 ```
 
 The number `5` is skipped because the loop continues to the next iteration when `i` is 5.
+
+```python
+for fruit in ['apple', 'orange', 'cherry', 'berry']:
+    if fruit =='cherry':
+        continue  # Skip this iteration when 'cherry' is found
+    print(fruit)
+```
+
+This will print: 
+```
+apple
+orange
+berry
+```
 
 ### 5. **Debugging and Testing Iterative Logic**
 

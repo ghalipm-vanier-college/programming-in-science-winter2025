@@ -64,20 +64,22 @@ This will print:
 
 ### 3. **The While Loop**
 
-The **While loop** is used when you want to repeat a block of code as long as a certain condition is **true**. It is useful when you do not know in advance how many times the loop should run.
+The **While loop** is used when you want to repeat a block of code as long as a certain condition is **true**. It is useful when you do not know in advance how many times the loop should run. While loop is not self contained and depends on external factors. For loop is enitrely self contained. 
 
 #### Syntax:
 ```python
+# initial value for "condition - variable" !!!
 while condition:
-    # Code to execute as long as the condition is true
+    # Statement - code to execute as long as the condition is true
+    # change the "condition - variable" for termination !!!
 ```
 
-The loop continues to run until the **condition** becomes **false**.
+The loop continues to run until the **condition** becomes **false**. While loop can also be used instead of for loop:
 
 Example:
 ```python
 # Print numbers from 1 to 5 using a while loop
-count = 1
+count = 1 # important to initialize
 while count <= 5:
     print(count)
     count += 1  # Increment the counter to avoid infinite loop
@@ -91,6 +93,32 @@ This will print:
 4
 5
 ```
+
+While loop is used where for loop cannot be used:
+
+Example: 
+
+```python
+import random
+
+# Generate a random number between 1 and 10
+secret_number = random.randint(1, 10)
+guess = None
+
+while guess != secret_number:
+    guess = int(input("Guess a number between 1 and 10: "))
+    
+    if guess < secret_number:
+        print("Too low! Try again.")
+    elif guess > secret_number:
+        print("Too high! Try again.")
+
+print(f"Congratulations! You guessed the number {secret_number}.")
+
+```
+
+This example demonstrates a while loop that runs until a condition is met - number of trials is not known/deterministic.
+
 
 ### 4. **Break and Continue Statements**
 

@@ -85,16 +85,33 @@ In Python, you can achieve this principle by writing functions that can easily b
 
 Example:
 ```python
-# Original function that calculates area of a circle
-def calculate_area(radius):
-    return 3.14 * radius ** 2
+import math
 
-# Extended function that also calculates the circumference without modifying the original function
-def calculate_circumference(radius):
-    return 2 * 3.14 * radius
+def calculate_area(shape, variables):
+    if shape == 'ellipse':
+        short_axis, long_axis = variables
+        return calculate_ellipse_area(short_axis, long_axis)
+    elif shape == 'parallelogram':  # Fixed typo
+        side_1, side_2, angle_radian = variables
+        return calculate_parallelogram_area(side_1, side_2, angle_radian)
+    elif shape == 'triangle':
+        side_1, side_2, angle_radian = variables
+        return calculate_parallelogram_area(side_1, side_2, angle_radian) / 2  # Half of a parallelogram
+
+def calculate_ellipse_area(short_axis, long_axis):
+    return math.pi * short_axis * long_axis
+
+def calculate_parallelogram_area(side_1, side_2, angle_radian):
+    return side_1 * side_2 * math.sin(angle_radian)
+
+# Test cases
+print('Triangle area:', calculate_area('triangle', [4, 5, math.pi/2]))  # Right triangle - Should print 10.0
+print('Ellipse area:', calculate_area('ellipse', [4, 4]))  # Circle - Should print ~50.27
+print('Parallelogram area:', calculate_area('parallelogram', [4, 5, math.pi/2]))  # Rectangle - Should print 20.0
+
 ```
 
-Here, you’ve extended the functionality by adding `calculate_circumference()` without modifying the original `calculate_area()` function, which adheres to the Open/Closed Principle.
+Here, one can extend the functionality to calculating the area of circle, rectangle, square, right tringle etc. without modifying the original `calculate_area()` function, which adheres to the Open/Closed Principle.
 
 ### 5. **Enhance Code Structure and Logic Through Functions**
 

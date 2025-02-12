@@ -96,7 +96,8 @@ def calculate_area(shape, variables):
         return calculate_parallelogram_area(side_1, side_2, angle_radian)
     elif shape == 'triangle':
         side_1, side_2, angle_radian = variables
-        return calculate_parallelogram_area(side_1, side_2, angle_radian) / 2  # Half of a parallelogram
+        return calculate_parallelogram_area(side_1, side_2, angle_radian) / 2
+        # Half of a parallelogram
 
 def calculate_ellipse_area(short_axis, long_axis):
     return math.pi * short_axis * long_axis
@@ -105,9 +106,12 @@ def calculate_parallelogram_area(side_1, side_2, angle_radian):
     return side_1 * side_2 * math.sin(angle_radian)
 
 # Test cases
-print('Triangle area:', calculate_area('triangle', [4, 5, math.pi/2]))  # Right triangle - Should print 10.0
-print('Ellipse area:', calculate_area('ellipse', [4, 4]))  # Circle - Should print ~50.27
-print('Parallelogram area:', calculate_area('parallelogram', [4, 5, math.pi/2]))  # Rectangle - Should print 20.0
+print('Triangle area:', calculate_area('triangle', [4, 5, math.pi/2]))
+    # Right triangle - Should print 10.0
+print('Ellipse area:', calculate_area('ellipse', [4, 4]))
+    # Circle - Should print ~50.27
+print('Parallelogram area:', calculate_area('parallelogram', [4, 5, math.pi/2]))
+    # Rectangle - Should print 20.0
 
 ```
 

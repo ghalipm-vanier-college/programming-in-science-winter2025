@@ -14,9 +14,7 @@ A **two-dimensional array** is a data structure that can store a grid or matrix 
 For example, a 2D array with 3 rows and 4 columns can be visualized as follows:
 
 ```
-[ [1, 2, 3, 4],
-  [5, 6, 7, 8],
-  [9, 10, 11, 12] ]
+[ [1, 2, 3, 4],  [5, 6, 7, 8],  [9, 10, 11, 12] ]
 ```
 
 Here, there are 3 lists (rows), and each list contains 4 elements (columns).

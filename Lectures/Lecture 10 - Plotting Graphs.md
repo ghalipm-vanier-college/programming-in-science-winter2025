@@ -4,7 +4,7 @@
 
 1. [Introduction to Plotting in Python](#introduction-to-plotting-in-python)
 2. [Plotting Simple Graphs Using `plot()` and `show()`](#plotting-simple-graphs-using-plot-and-show)
-3. [Plotting Graphs Using numpy() and plot()]
+3. [Plotting Graphs Using numpy() and plot()](##plotting-graphs-using-numpy-and-plot)
 4. [Creating Density Plots](#creating-density-plots)
 5. [Debugging and Testing Plotting Operations](#debugging-and-testing-plotting-operations)
 

@@ -65,8 +65,31 @@ plt.xlabel('X Values')  # Adding a label for the x-axis
 plt.ylabel('Y Values')  # Adding a label for the y-axis
 plt.show()
 ```
+### 3. **Plotting Graphs Using `numpy()` and `plot()`**
+You can use **NumPy** with **Matplotlib.pyplot** to create graphs easily.
+### 3.a) Graphing with y=f(x), x in (a,b), with step length h 
+The **numpy** helps generate the x-values as an array, while the y-values are computed using a function 𝑓(𝑥). These values are then plotted using matplotlib.pyplot. 
 
-### 3. **Creating Density Plots**
+```python
+import matplotlib.pyplot as plt
+import numpy as np
+# x in (a,b) with step length h
+x=np.arange(a,b+h,h)
+y=f(x)
+plt.plot(x,y)
+```
+### 3.b) Graphing with txt and CSV files
+The **numpy**  can load data from a text or csv file. These values are then plotted using matplotlib.pyplot. 
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+data=np.loadtxt('data.csv', delimiter=", ") # data=np.loadtxt('data.txt')
+x=data[:,0]
+y=data[:,1]
+plt.plot(x,y)
+```
+
+### 4. **Creating Density Plots**
 
 A **Density Plot** is a smooth representation of the distribution of a dataset. It provides a more continuous representation of the data's distribution compared to histograms. In Matplotlib, you can use **Seaborn**, another library built on top of Matplotlib, to create density plots. Seaborn provides a more convenient interface for complex plotting.
 
@@ -114,7 +137,7 @@ plt.show()
 - **`shade`**: Fills the area under the curve with color.
 - **`bw_adjust`**: Adjusts the bandwidth, which controls the smoothness of the density plot.
 
-### 4. **Debugging and Testing Plotting Operations**
+### 5. **Debugging and Testing Plotting Operations**
 
 When working with plots, it's essential to ensure that your data is correctly formatted and that your plotting functions are used properly. Here are some debugging tips:
 
